@@ -1,0 +1,8 @@
+Total: 21
+<CPU> <3> <3>
+<MOTHERBOARD> <23> <3>
+<RAM> <3> <3>
+<PSU> <23> <3>
+<GPU> <2> <3>
+<CASE> <3> <3>
+<DRIVE> <3> <3>
