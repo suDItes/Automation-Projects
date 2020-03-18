@@ -1,8 +1,14 @@
 from datetime import date
 import os
+import platform
+
 
 root = os.path.dirname(os.path.realpath(__file__))
-
+system = platform.system()
+if 'windows' in system.lower():
+    separator = '\\'
+else:
+    separator = '/'
 #simple function to get the current date 
 def getDate() -> str:
     cur_date = date.today().strftime('%d_%m_%Y')
@@ -30,7 +36,7 @@ def format_log(parts, part_names, prices) -> list:
 #function to create the log file
 def save(log_text, log_name: str = 'log-file'):
     #Move to the logs directory
-    log_path = root + '\logs'
+    log_path = root + separator + 'logs'
     print(log_path)
     os.chdir(root)
     try:
@@ -61,7 +67,7 @@ def deformatLog(log_text : list):
 def load(log_file_name = 'N/A'):
     #change work space to the logs directory
     try:
-        log_path = root + '\logs'
+        log_path = root + separator + 'logs'
         os.chdir(log_path)
     except FileNotFoundError:
         return False, str('Path ' + log_path + 'does not exist. Something gone wrong!')

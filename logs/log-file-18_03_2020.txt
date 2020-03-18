@@ -1,8 +1,0 @@
-Total: 35.0
-<CPU> <5> <5>
-<MOTHERBOARD> <5> <5>
-<RAM> <5> <5>
-<PSU> <5> <5>
-<GPU> <5> <5>
-<CASE> <5> <5>
-<DRIVE> <5> <5>
