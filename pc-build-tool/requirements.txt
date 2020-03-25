@@ -7,7 +7,7 @@ autopep8==1.5
 backcall==0.1.0
 bcrypt==3.1.6
 beautifulsoup4==4.8.2
-bleach==3.1.1
+bleach==3.1.2
 blinker==1.4
 Brlapi==0.6.7
 bs4==0.0.1
